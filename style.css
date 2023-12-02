@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 4fr;
+    gap: 8px;
+}
+
+.header {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-child{
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    margin-left: 32px;
+    flex: 1;
+    max-width: 600px;
+}
+
+#searchbar {
+    height: 28px;
+    border: 0px;
+    background-color: rgb(235, 232, 232);
+    border-radius: 20px;
+    width: 100%;
+    margin: 16px 96px 16px 16px;
+}
+
+#search-button, #bell-icon {
+    height: 28px;
+    border: 0px;
+    background-color: white;
+}
+
+.profile-pic {
+    margin: 16px;
+    border-radius: 50%;
+}
+
+
+.header-child > p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 32px;
+}
+
+.dashboard {
+    background-color: rgb(15, 160, 218);
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    grid-row: 1/5;
+}
+
+#dash-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+}
+ 
+#dash-head > img {
+    filter: invert(100%);
+}
+
+.dash-items {
+    margin-top: 32px;
+    margin-left: 8px;
+    display: grid;
+    grid-template-rows: repeat(10,30px);
+    gap: 8px;
+}
+
+.dash-item {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
